@@ -1,0 +1,486 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
+
+:root {
+  --main-color: #222222;
+  --text-color: #98999a;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--main-color);
+  color: var(--text-color);
+  font-family: "Quicksand", sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.desktop-section {
+  display: none;
+}
+
+.mobile-section {
+  display: block;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  margin-top: 2%;
+  font-size: 20px;
+}
+
+.left-heading-part {
+  margin-left: 0%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.link {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.center-part {
+  /* position: absolute;
+left: 45%;
+top: 40%;
+transform: translate(-40%, -45%);
+width: 50%; */
+  width: 70%;
+  margin-top: 22%;
+  margin-left: 15%;
+}
+
+/* Registration Page */
+
+.register-heading {
+  font-weight: none;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.register-form {
+  text-align: center;
+  margin: auto;
+}
+
+.register-name,
+.register-email,
+.register-password,
+.register-password2 {
+  width: 100%;
+  margin-top: 0.8rem;
+  border: 1px solid var(--text-color);
+  padding: 8px;
+}
+
+.register-submit {
+  margin-top: 1rem;
+  width: 30%;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: var(--main-color);
+  color: var(--text-color);
+  border-color: lightgray;
+}
+
+.register-submit:hover {
+  cursor: pointer;
+  border-color: var(--text-color);
+}
+
+.second-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logout-section {
+  margin-right: 16px;
+}
+
+.logout {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.logout:hover {
+  text-decoration: underline;
+}
+
+.my-1 {
+  font-size: 18px;
+  text-align: center;
+  margin-top: 0.6rem;
+}
+
+/* Alert css */
+.notification-part {
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 0px;
+  font-size: 18px;
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+/* Dashboard.js */
+
+.todo-text {
+  width: 100%;
+  font-size: 1.7rem;
+  border: none;
+  font-weight: none;
+  background-color: var(--main-color);
+  caret-color: white;
+  border-bottom: dotted;
+  border-bottom-color: var(--text-color);
+  color: white;
+}
+
+.todo-text:focus {
+  outline: none;
+}
+
+.todo-navigation {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-view-all,
+.btn-active,
+.btn-completed {
+  background-color: var(--main-color);
+  border: none;
+  font-size: 1.5rem;
+  color: var(--text-color);
+}
+
+.btn-view-all:hover,
+.btn-active:hover,
+.btn-completed:hover {
+  cursor: pointer;
+}
+
+.active {
+  color: white;
+}
+
+.active:hover {
+  color: white;
+}
+
+.todo-seperator {
+  font-size: 1.5rem;
+}
+
+/* TodoItem.js */
+
+.list-of-todos {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  caret-color: white;
+  border-bottom: dotted;
+  border-bottom-color: var(--text-color);
+  color: white;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+.todo-text1 {
+  width: 100%;
+  border: none;
+  font-size: 2.5rem;
+  font-weight: none;
+  background-color: var(--main-color);
+  padding-left: 2rem;
+}
+
+.todo-text1-complete {
+  width: 100%;
+  border: none;
+  font-size: 2.5rem;
+  font-weight: none;
+  background-color: var(--main-color);
+  padding-left: 2rem;
+  text-decoration: line-through;
+  text-decoration-color: green;
+  color: var(--text-color);
+}
+
+.todo-delete,
+.todo-edit-logo,
+.completed-logo {
+  color: var(--text-color);
+}
+
+.todo-edit-logo {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.todo-delete:hover,
+.todo-edit-logo:hover,
+.completed-logo:hover {
+  cursor: pointer;
+  color: white;
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    background-color: var(--main-color);
+    color: var(--text-color);
+    font-family: "Quicksand", sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .desktop-section {
+    display: block;
+  }
+
+  .mobile-section {
+    display: none;
+  }
+
+  .container {
+    width: 80%;
+    margin: auto;
+    margin-top: 2%;
+    font-size: 10px;
+  }
+
+  .left-heading-part {
+    margin-left: 0%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .link {
+    color: var(--text-color);
+    text-decoration: none;
+  }
+
+  .link:hover {
+    text-decoration: underline;
+  }
+
+  .center-part {
+    /* position: absolute;
+  left: 45%;
+  top: 40%;
+  transform: translate(-40%, -45%);
+  width: 50%; */
+    width: 70%;
+    margin-top: 15%;
+    margin-left: 15%;
+  }
+
+  /* Registration Page */
+
+  .register-heading {
+    font-weight: none;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+
+  .register-form {
+    text-align: center;
+    margin: auto;
+  }
+
+  .form-group {
+  }
+
+  .register-name,
+  .register-email,
+  .register-password,
+  .register-password2 {
+    width: 80%;
+    margin-top: 0.8rem;
+    font-size: 20px;
+    border: 1px solid var(--text-color);
+    padding: 8px;
+    margin-bottom: 0.8rem;
+  }
+
+  .register-submit {
+    margin-top: 1rem;
+    width: 20%;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: var(--main-color);
+    color: var(--text-color);
+    border-color: lightgray;
+  }
+
+  .register-submit:hover {
+    cursor: pointer;
+    border-color: var(--text-color);
+  }
+
+  .second-section {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .logout-section {
+    margin-right: 16px;
+  }
+
+  .logout {
+    text-decoration: none;
+    color: var(--text-color);
+  }
+
+  .logout:hover {
+    text-decoration: underline;
+  }
+
+  .my-1 {
+    font-size: 18px;
+    text-align: center;
+    margin-top: 0.6rem;
+  }
+
+  /* Alert css */
+  .notification-part {
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 50%;
+    padding: 0px 0px;
+    font-size: 24px;
+    text-align: center;
+    margin-left: 18rem;
+  }
+
+  /* .notification-container p {
+  margin: 0;
+}
+
+.notification-container.show {
+  transform: translateY(-50px);
+} */
+
+  /* Dashboard.js */
+
+  .todo-text {
+    width: 100%;
+    font-size: 2.5rem;
+    border: none;
+    font-weight: none;
+    background-color: var(--main-color);
+    caret-color: white;
+    border-bottom: dotted;
+    border-bottom-color: var(--text-color);
+    color: white;
+  }
+
+  .todo-text:focus {
+    outline: none;
+  }
+
+  .todo-navigation {
+    margin-top: 20px;
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .btn-view-all,
+  .btn-active,
+  .btn-completed {
+    background-color: var(--main-color);
+    border: none;
+    font-size: 1.2rem;
+    color: var(--text-color);
+  }
+
+  .btn-view-all:hover,
+  .btn-active:hover,
+  .btn-completed:hover {
+    cursor: pointer;
+  }
+
+  .active {
+    color: white;
+  }
+
+  .active:hover {
+    color: white;
+  }
+
+  .todo-seperator {
+    font-size: 1rem;
+  }
+
+  /* TodoItem.js */
+
+  .list-of-todos {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .todo-item {
+    display: flex;
+    justify-content: space-between;
+    caret-color: white;
+    border-bottom: dotted;
+    border-bottom-color: var(--text-color);
+    color: white;
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+
+  .todo-text1 {
+    width: 100%;
+    border: none;
+    font-size: 2.5rem;
+    font-weight: none;
+    background-color: var(--main-color);
+    padding-left: 2rem;
+  }
+
+  .todo-text1-complete {
+    width: 100%;
+    border: none;
+    font-size: 2.5rem;
+    font-weight: none;
+    background-color: var(--main-color);
+    padding-left: 2rem;
+    text-decoration: line-through;
+    text-decoration-color: green;
+    color: var(--text-color);
+  }
+
+  .todo-delete,
+  .todo-edit-logo,
+  .completed-logo {
+    color: var(--text-color);
+  }
+
+  .todo-edit-logo {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .todo-delete:hover,
+  .todo-edit-logo:hover,
+  .completed-logo:hover {
+    cursor: pointer;
+    color: white;
+  }
+}
